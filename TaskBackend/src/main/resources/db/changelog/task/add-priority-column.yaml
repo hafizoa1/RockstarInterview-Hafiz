@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: "hafiz"
+      changes:
+        - addColumn:
+            tableName: task
+            columns:
+              - column:
+                  name: priority
+                  type: INT
