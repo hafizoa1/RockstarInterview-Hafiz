@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:TaskTrackerFrontend.ViewModels"
+        xmlns:models="using:TaskTrackerFrontend.Models"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="TaskTrackerFrontend.MainWindow"
+        Title="TaskTrackerFrontend"
+        x:DataType="vm:TaskViewModel">
+
+    <Design.DataContext>
+        <vm:TaskViewModel/>
+    </Design.DataContext>
+
+    <StackPanel>
+        <TextBox Text="{Binding TaskName}" Watermark="Enter task name"/>
+        <Button Command="{Binding AddTaskCommand}">Add Task</Button>
+        <ListBox ItemsSource="{Binding Tasks}" SelectedItem="{Binding SelectedTask}">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="models:TaskModel">
+                    <TextBlock Text="{Binding TaskName}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Command="{Binding DeleteTaskCommand}">Delete Selected Task</Button>
+    </StackPanel>
+
+</Window>

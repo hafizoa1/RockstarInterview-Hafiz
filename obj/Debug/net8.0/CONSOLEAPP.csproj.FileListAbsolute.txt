@@ -1,0 +1,4 @@
+/Users/hafiz.abdulkareem74/code/learning_resources/hafiz_github_excercises/taskTracker/obj/Debug/net8.0/CONSOLEAPP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hafiz.abdulkareem74/code/learning_resources/hafiz_github_excercises/taskTracker/obj/Debug/net8.0/CONSOLEAPP.AssemblyInfoInputs.cache
+/Users/hafiz.abdulkareem74/code/learning_resources/hafiz_github_excercises/taskTracker/obj/Debug/net8.0/CONSOLEAPP.AssemblyInfo.cs
+/Users/hafiz.abdulkareem74/code/learning_resources/hafiz_github_excercises/taskTracker/obj/Debug/net8.0/CONSOLEAPP.csproj.CoreCompileInputs.cache
