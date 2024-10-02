@@ -1,0 +1,16 @@
+# Java
+TaskBackend/build/
+TaskBackend/.gradle/
+
+# C#
+TaskTrackerFrontend/bin/
+TaskTrackerFrontend/obj/
+
+# Root directory artifacts
+/bin/
+/obj/
+
+# IDE files
+.idea/
+.vs/
+*.user
